@@ -1,13 +1,10 @@
 import React, {Component} from 'react';
-import {View, Text} from 'react-native';
+import DemoComponent from './src/Buoi01/DemoComponent';
 
 class App extends Component {
   render() {
-    return (
-      <View style={{}}>
-        <Text>Welcome to React Native</Text>
-      </View>
-    );
+    console.log('render');
+    return <DemoComponent />;
   }
 }
 
