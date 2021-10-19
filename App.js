@@ -5,11 +5,16 @@ import BinddingData from './src/Buoi03/BinddingData';
 import ExUI from './src/Buoi03/ExUI';
 import RenderList from './src/Buoi03/RenderList';
 import Bidding from './src/Buoi03/BTVN/Bidding';
+import DemoProps from './src/Buoi04/Props';
+import DemoScrollView from './src/Buoi04/ScrollView';
+import DemoFlatList from './src/Buoi04/FlastList';
+import DemoSectionList from './src/Buoi04/SectionList';
+import LayoutZalo from './src/Buoi04/BTVN';
 
 class App extends Component {
   render() {
     console.log('render');
-    return <Bidding />;
+    return <LayoutZalo />;
   }
 }
 

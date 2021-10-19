@@ -12,6 +12,8 @@ target 'ReactNativeCyberSoft' do
     :hermes_enabled => false
   )
 
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+
   target 'ReactNativeCyberSoftTests' do
     inherit! :complete
     # Pods for testing
