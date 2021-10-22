@@ -10,11 +10,11 @@ import DemoScrollView from './src/Buoi04/ScrollView';
 import DemoFlatList from './src/Buoi04/FlastList';
 import DemoSectionList from './src/Buoi04/SectionList';
 import LayoutZalo from './src/Buoi04/BTVN';
-
+import RockPaperScissor from './src/Buoi05/RockPaperScissor';
 class App extends Component {
   render() {
     console.log('render');
-    return <LayoutZalo />;
+    return <RockPaperScissor />;
   }
 }
 
