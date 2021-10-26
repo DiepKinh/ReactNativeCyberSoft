@@ -4,7 +4,7 @@ import LinearGradient from 'react-native-linear-gradient';
 
 export default class ButtonItem extends Component {
   render() {
-    const {colors, title, isLinear, backgroundColor} = this.props;
+    const {colors, title, isLinear, backgroundColor, onPress} = this.props;
     if (isLinear) {
       return (
         <LinearGradient
@@ -12,14 +12,16 @@ export default class ButtonItem extends Component {
           colors={colors}
           start={{x: 1, y: 0}}
           end={{x: 0, y: 1}}>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={onPress}>
             <Text style={styles.buttonText}> {title} </Text>
           </TouchableOpacity>
         </LinearGradient>
       );
     } else {
       return (
-        <TouchableOpacity style={[styles.buttonContainer, {backgroundColor}]}>
+        <TouchableOpacity
+          style={[styles.buttonContainer, {backgroundColor}]}
+          onPress={onPress}>
           <Text style={styles.buttonText}> {title} </Text>
         </TouchableOpacity>
       );
