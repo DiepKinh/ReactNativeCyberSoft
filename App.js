@@ -10,11 +10,18 @@ import DemoScrollView from './src/Buoi04/ScrollView';
 import DemoFlatList from './src/Buoi04/FlastList';
 import DemoSectionList from './src/Buoi04/SectionList';
 import LayoutZalo from './src/Buoi04/BTVN';
-import RockPaperScissor from './src/Buoi05/RockPaperScissor';
+import RockPaperScissor from './src/Buoi05_06/RockPaperScissor';
+import {Provider} from 'react-redux';
+import {store} from './src/Buoi07/Redux/store';
+import DemoRedux from './src/Buoi07/DemoRedux';
+
 class App extends Component {
   render() {
-    console.log('render');
-    return <RockPaperScissor />;
+    return (
+      <Provider store={store}>
+        <DemoRedux />
+      </Provider>
+    );
   }
 }
 
