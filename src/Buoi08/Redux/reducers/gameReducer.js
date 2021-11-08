@@ -21,7 +21,6 @@ const initialState = {
 };
 
 const gameReducer = (state = {...initialState}, action) => {
-  console.log(action.type);
   switch (action.type) {
     case USER_SELECT:
       state.playerSelect = action.payload;
