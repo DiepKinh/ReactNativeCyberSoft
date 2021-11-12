@@ -18,13 +18,15 @@ import store from './src/Buoi08/Redux/store';
 import RockPaperScissor from './src/Buoi08/RockPaperScissor';
 import DemoLifecycle from './src/Buoi09/DemoLifecycle';
 import DemoCallAPI from './src/Buoi09/DemoCallAPI';
+import DemoAxios from './src/Buoi10/DemoAxios';
+import ListProductScreen from './src/Buoi10/ListProductScreen';
 
 class App extends Component {
   render() {
     return (
       <Provider store={store}>
         {/* <DemoLifecycle /> */}
-        <DemoCallAPI />
+        <ListProductScreen />
       </Provider>
     );
   }
