@@ -20,8 +20,8 @@ import DemoLifecycle from './src/Buoi09/DemoLifecycle';
 import DemoCallAPI from './src/Buoi09/DemoCallAPI';
 import DemoAxios from './src/Buoi10/DemoAxios';
 import ListProductScreen from './src/Buoi10/ListProductScreen';
-import OnboardScreen from './src/Buoi11/OnboardScreen';
-import RootScreen from './src/Buoi11';
+import OnboardScreen from './src/Buoi11_12/OnboardScreen';
+import RootScreen from './src/Buoi11_12';
 
 class App extends Component {
   render() {
