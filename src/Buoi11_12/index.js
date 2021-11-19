@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import {Text, StyleSheet, View} from 'react-native';
-import LoginScreen from './LoginScreen';
+import LoginScreen from './LoginScreen/ValidateWithFormik';
+// import LoginScreen from './LoginScreen';
+
 import OnboardScreen from './OnboardScreen';
 
 export default class RootScreen extends Component {
